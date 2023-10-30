@@ -1,0 +1,28 @@
+/* WatermarkPrint.css */
+
+.watermark-print {
+    position: relative;
+    margin: 20px 30px;
+    width: 90%;
+    height: 90%;
+}
+
+.watermark-logo {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: 'translate(-50%, -50%)';
+    width: 80%;
+    height: 80%;
+    background-image: url('../../../assets/images/kssa_logo.png'); /* 로고 이미지 경로를 수정하세요 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.2; /* 로고의 투명도를 조정하세요 */
+    z-index: 1; /* Ensure the logo stays behind the content */
+}
+
+.content {
+    position: relative;
+    z-index: 3; /* Ensure the content stays on top of the logo */
+}
